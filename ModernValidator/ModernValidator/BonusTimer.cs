@@ -77,7 +77,7 @@ namespace ModernValidator
                 timerBonus[id].Stop();
                 start_stopBonus[id] = false;
             }
-            labBonus[id].labBonus.Text = "bonus " + durat[id];
+            labBonus[id].labBonus.Text = "Bonus " + durat[id];
           
         }
 

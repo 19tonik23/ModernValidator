@@ -15,9 +15,11 @@ namespace ModernValidator
         public bool[] start_stopFine = new bool[] { false, false, false };
         public LabBalance[] labBalance;
         public AllCards cards;
-
-        public FineTimer(int plasticCnt, LabPenal [] labFine, LabBalance[] labBalance, AllCards cards)
+        public BonusTimer bnsTimer;
+        public FineTimer(int plasticCnt, LabPenal [] labFine, LabBalance[] labBalance,
+            AllCards cards, BonusTimer bnsTimer)
         {
+            this.bnsTimer = bnsTimer;
             this.labFine = labFine;
             this.labBalance = labBalance;
             this.cards = cards;
@@ -82,16 +84,16 @@ namespace ModernValidator
 
                 timerFine[id].Stop();
                 start_stopFine[id] = false;
-
+                bnsTimer.durat[id] = SetTime();
                 cards.allCrd[id].balance = cards.allCrd[id].balance - PenalSum();
 
-                labBalance[id].labBalance.Text = "balance-" + cards.allCrd[id].balance;
+                labBalance[id].labBalance.Text = "Balance " + cards.allCrd[id].balance;
                 duratFine[id] = SetTime();
                 cards.allCrd[id].ent_exit = !cards.allCrd[id].ent_exit;
                 
             }
 
-            labFine[id].labPenal.Text = "fine " + duratFine[id];
+            labFine[id].labPenal.Text = "Fine " + duratFine[id];
         }
 
         //останов таймера
@@ -100,7 +102,7 @@ namespace ModernValidator
             duratFine[item] = SetTime();
             timerFine[item].Stop();
             start_stopFine[item] = false;
-            labFine[item].labPenal.Text = "fine " + SetTime();
+            labFine[item].labPenal.Text = "Fine " + SetTime();
 
         }
 

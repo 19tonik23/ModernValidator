@@ -29,7 +29,8 @@ namespace ModernValidator
   
         }
 
-        //создание лейблов  баланс
+        //создание лейблов  баланс,ID,бонусное время,штрафное время
+        //(иммитирует вышел,но не приложил карточку)
 
         private void AllLabelArray()
         {
@@ -86,13 +87,10 @@ namespace ModernValidator
               form.Top + panPlastic[i].Height /3 + panPlastic[i].Height * i * 6 / 5);
             form.Controls.Add(panPlastic[i]);
             panPlastic[i].Click += PlasicClick;
-            /*  panPlastic[i].MouseDown += Plasic_MouseDown;
-              panPlastic[i].MouseMove += Plasic_MouseMove;
-              panPlastic[i].MouseUp += Plasic_MouseUp;*/
-            
+          
         }
 
-
+        //событие выбора карточки
         public int cardIndex;
         public void PlasicClick(object sender, EventArgs e)
         {
@@ -105,6 +103,7 @@ namespace ModernValidator
 
         }
 
+        //разблокирование кнопок остановок
         public void StopsEnabled()
         {
             foreach (Button bt in stops)

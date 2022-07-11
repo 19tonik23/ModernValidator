@@ -24,6 +24,7 @@ namespace ModernValidator
             throw new NotImplementedException();
         }
 
+        // лейбл баланс на карточке
         public void AddBalance(double balance)
         {
             labBalance.Text = "Balance " + balance;

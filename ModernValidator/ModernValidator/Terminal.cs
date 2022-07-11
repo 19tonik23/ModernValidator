@@ -50,7 +50,7 @@ namespace ModernValidator
             checkCard = new CheckCard(panTerminal, CheckImg()[0]);
             bnsTimer = new BonusTimer(plastics.plasticCnt,plastics.labBonus,plastics.allCards);
             fineTimer = new FineTimer(plastics.plasticCnt,plastics.labPenal,plastics.labBalance,
-                plastics.allCards);
+                plastics.allCards,bnsTimer);
             
             
         }
@@ -149,11 +149,13 @@ namespace ModernValidator
             }
         }
 
+        //иконки вход выход на табло
         private Image[] CheckImg()
         {
             Image [] img = new Image[] {Properties.Resources.pasEnt ,Properties.Resources.pasExit};
             return img;
         }
+
         //возврат карты на место
         private void ReturnCard()
         {
@@ -167,7 +169,8 @@ namespace ModernValidator
 
             plastics.panPlastic[plastics.cardIndex].Location = new Point(panTerminal.Width * 3 / 12
                 , panTerminal.Height / 2);
-        
+
+            
             Thread.Sleep(500);
             plastics.panPlastic[plastics.cardIndex].Location = new Point(pnt.X, pnt.Y);
             plastics.panPlastic[plastics.cardIndex].BorderStyle = BorderStyle.None;
@@ -221,8 +224,9 @@ namespace ModernValidator
                 delta = Math.Abs(entr[index] - exit[index]);
             }
             plastics.allCards.allCrd[index].balance = plastics.allCards.allCrd[index].balance - delta;
-            plastics.labBalance[index].labBalance.Text = "balance " + plastics.allCards.allCrd[index].balance;
+            plastics.labBalance[index].labBalance.Text = "Balance " + plastics.allCards.allCrd[index].balance;
             plastics.labBalance[index].labBalance.Refresh();
+            
         }
 
         //Отправка баланса на табло
@@ -246,7 +250,7 @@ namespace ModernValidator
         {
             bnsTimer.start_stopBonus[index] = false;
             bnsTimer.timerBonus[index].Stop();
-            plastics.labBonus[index].labBonus.Text = "Balance " + plastics.allCards.allCrd[index].bonusTime;
+            plastics.labBonus[index].labBonus.Text = "Bonus " + plastics.allCards.allCrd[index].bonusTime;
         }
 
         //Возврат первоначальной надписи на табло

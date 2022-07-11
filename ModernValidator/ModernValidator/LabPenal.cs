@@ -17,13 +17,13 @@ namespace ModernValidator
             AddLab(penal);
         }
 
-       
+        //лейбл штраф время на карточке
         public void AddLab( int penal)
         {
             
             
                 labPenal = new Label();
-                labPenal.Text = "Pnl " + penal;
+                labPenal.Text = "Fine " + penal;
                 labPenal.AutoSize = true;
                 labPenal.BackColor = Color.Transparent;
                 labPenal.Location = new Point(LOC_X, LOC_Y);

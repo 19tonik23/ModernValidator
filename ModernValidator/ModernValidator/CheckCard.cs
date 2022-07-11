@@ -26,6 +26,8 @@ namespace ModernValidator
             panCheck.Visible = false;
             panTerminal.Controls.Add(panCheck);
         }
+
+        //иконка нет входа
         public void NotEnt()
         {
             panCheck.BackgroundImage = Properties.Resources.not_ent;

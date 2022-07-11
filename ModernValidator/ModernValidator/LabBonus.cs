@@ -17,6 +17,7 @@ namespace ModernValidator
             AddLab(bonus);
         }
 
+        //лейбл бонус время на карточке
         public void AddLab( int bonus)
         {
            

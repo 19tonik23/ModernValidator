@@ -17,7 +17,7 @@ namespace ModernValidator
 
         }
 
-        //Создание случайным  образом суммы на карточке
+        //Создание случайным  образом счёт на карточке
         private void Cards()
         {
             allCrd = new Card[cardCnt];

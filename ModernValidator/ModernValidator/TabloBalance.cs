@@ -10,6 +10,7 @@ namespace ModernValidator
     public class TabloBalance:Interface_Tablo
     {
         public Label tabloBalance;
+        //сщздание табло,где указывается баланс и прикладывание карточки
         public void CreatTableLabel(System.Windows.Forms.Panel pan,Image img)
         {
             tabloBalance = new Label();

@@ -17,7 +17,7 @@ namespace ModernValidator
             AddLab( id);
         }
 
-  
+        //лейбл Id на карточке
         public void AddLab( int id)
         {
            

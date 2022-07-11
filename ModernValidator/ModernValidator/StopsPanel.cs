@@ -14,7 +14,9 @@ namespace ModernValidator
          {
              CreatTableLabel(panTerminal,img);
          }
-         public void CreatTableLabel(Panel panTerminal, System.Drawing.Image img)
+
+        //создание панели остановок
+        public void CreatTableLabel(Panel panTerminal, System.Drawing.Image img)
             {
                 stopsPan = new Panel();
                 stopsPan.Size = new Size(panTerminal.Height /2, panTerminal.Height / 8);

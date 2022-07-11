@@ -19,3 +19,17 @@ D:\Старый комп\С#_project\Projects\ModernValidator\ModernValidator\ob
 D:\Старый комп\С#_project\Projects\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.ResolveComReference.cache
 D:\Старый комп\С#_project\Projects\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.AssemblyReference.cache
 D:\Старый комп\С#_project\Projects\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.CoreCompileInputs.cache
+D:\git_projrcts\ModernValidator\ModernValidator\bin\Debug\ModernValidator.exe
+D:\git_projrcts\ModernValidator\ModernValidator\bin\Debug\ModernValidator.pdb
+D:\git_projrcts\ModernValidator\ModernValidator\bin\Debug\Interop.WMPLib.dll
+D:\git_projrcts\ModernValidator\ModernValidator\bin\Debug\AxInterop.WMPLib.dll
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.AssemblyReference.cache
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\Interop.WMPLib.dll
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.ResolveComReference.cache
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.Form1.resources
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.Properties.Resources.resources
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.GenerateResource.cache
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.csproj.CoreCompileInputs.cache
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.exe
+D:\git_projrcts\ModernValidator\ModernValidator\obj\x86\Debug\ModernValidator.pdb
